@@ -39,7 +39,7 @@ Follow these steps to install and use the extension locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/deepeshnavani1203/SpeedTube.git
 ```
 
 Or download the ZIP and extract it.
