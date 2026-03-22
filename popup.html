@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Speed Controller</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Speed</h1>
+        <div class="current-speed">
+            Current: <span id="current-val">1.0x</span>
+        </div>
+        
+        <div class="presets">
+            <button class="speed-btn" data-speed="1">1x</button>
+            <button class="speed-btn" data-speed="1.5">1.5x</button>
+            <button class="speed-btn" data-speed="2">2x</button>
+            <button class="speed-btn" data-speed="2.5">2.5x</button>
+            <button class="speed-btn" data-speed="3">3x</button>
+            <button class="speed-btn" data-speed="4">4x</button>
+        </div>
+
+        <div class="custom-speed">
+            <input type="number" id="custom-input" step="0.1" min="1" max="4" placeholder="Custom (1-4)">
+            <button id="apply-custom">Apply</button>
+        </div>
+
+        <div id="status-msg"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

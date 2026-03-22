@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Speed Controller",
+  "version": "1.0",
+  "description": "Control YouTube playback speed between 2x and 4x.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
