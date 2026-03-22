@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Speed Controller",
+  "name": "SpeedTube",
   "version": "1.0",
   "description": "Control YouTube playback speed between 2x and 4x.",
   "permissions": [
